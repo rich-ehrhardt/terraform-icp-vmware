@@ -86,6 +86,7 @@ else
       # Mount
       if [[ "${OSLEVEL}" == "ubuntu" ]]
       then
+        sudo apt update
         sudo apt -y install nfs-common
       else
         sudo yum -y install nfs-utils
